@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sravanthi Naraharisetti Resume</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript"> <!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == ''){
+          e.style.display = 'none';
+       }
+       else{
+          e.style.display = '';
+       }
+    } //--> </script>  
+</head>
+<body>
+		<div id="links">
+			<button onclick="location.href='index.html'">Home</button>
+			<button class="current" onclick="location.href='profile.html'">Profile</button>
+			<button onclick="location.href='contact.html'">Contact</button>
+			<button><a href = "resume.pdf" download>Download Resume</a></button>
+		</div>
+		<ul class="details">
+		  <li>
+		  <a class="profile_links" href="#" onclick="toggle_visibility('education');">Education Details</a>
+		  	<table style="display:none;" id="education">
+			  <tr>
+			    <th>Qualification</th>
+			    <th>Year</th> 
+			    <th>Percentage</th>
+			  </tr>
+			  <tr>
+			    <td>BTech</td>
+			    <td>2010-2014</td> 
+			    <td>86</td>
+			  </tr>
+			  <tr>
+			    <td>Intermediate</td>
+			    <td>2008-2010</td> 
+			    <td>94</td>
+			  </tr>
+			</table>
+		  </li>
+		  <li>
+		  <a class="profile_links" href="#" onclick="toggle_visibility('skills');">Technical Skills</a>
+		       <ul class="skills" style="display:none;" id="skills">
+		        <span class="general"> In the range of 1 to 10</span>
+		        <li>
+		        	<span>C</span><progress value=8 max=10 data-label="8"></progress><br/>
+		        </li>
+		        <li>
+		        	<span>C ++</span><progress value=5 max=10 data-label="5"></progress>
+		        </li>
+		        <li>
+		        	<span>Java</span><progress value=7 max=10 data-label="7"></progress>
+		        </li>
+		        </ul>
+		  </li>
+		  <li>
+		  <a class="profile_links" href="#" onclick="toggle_visibility('achievements');">Key Achievements</a>
+		  <span class="general" style="display:none;" id="achievements">These are key crafting achievements </span>
+		  </li>
+		  <li>
+		  <a class="profile_links" href="#" onclick="toggle_visibility('projects');">Projects</a>
+		  <span class="general" style="display:none;" id="projects">These are my project details</span>
+		  </li>
+		  <li>
+		  <a class="profile_links" href="#" onclick="toggle_visibility('strengths');">Strengths and Weakness</a>
+		  <span class="general"  style="display:none;" id="strengths">These are my strengths and weakness </span>
+		  </li>
+		  <li>
+		  <a class="profile_links" href="#" onclick="toggle_visibility('hobbies');">Hobbies</a>
+		  <span class="general" style="display:none;" id="hobbies">These are my hobbies </span>
+		  </li>
+		</ul>
+		<div>
+		</div>
+</body>
+</html>
