@@ -1,0 +1,75 @@
+#container {
+	width: 960px; margin: auto;
+}
+body {  
+background-image: url(images/tempate1.jpg); 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} 
+.contact_icon{
+	height: 100px;
+}
+button {
+	font-size: 25px;
+	background-color: rgba(150, 169, 46, 0.56);
+	border-radius: 25px;
+    border-color: rgba(150, 169, 46, 0.56);
+	font-family: cursive;
+
+}
+#links {
+	text-align: center;
+}
+div{
+    margin-top: 60px;
+    text-align: center;
+	font-family: cursive;
+
+}
+ul.details {
+	list-style: url('images/bullet_point.png');
+    position:relative;
+    margin-left:450px;
+    margin-top: 60px;
+    font-size: 25px;
+	font-family: cursive;
+
+}
+table,th,td{
+	border: 1px solid #a01138;
+	text-align: center;
+	font-size: 25px;
+	font-family: cursive;
+
+}
+.profile_links {
+	position: absolute;
+	color: #27076f;
+}
+progress:before {
+  content: attr(data-label);
+  margin-left: 250px;
+  color: #a01138;
+}
+ul.skills{
+list-style:disc
+}
+th,h2 {
+	color: #a01138;
+}
+span.general {
+	    display: -webkit-box;
+	    color: #0e6b31;
+}
+span, input{
+	font-size: 30px;
+	font-family: cursive;
+
+}
+.message{
+	 margin-left: 600px;
+}
+.current{
+	background-color:  rgba(208, 150, 174, 0.65);
+}
