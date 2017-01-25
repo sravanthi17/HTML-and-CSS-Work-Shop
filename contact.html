@@ -5,7 +5,7 @@
 <title>Sravanthi Naraharisetti Resume</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript">
-	function enterName(){
+	function validateName(){
 		var name = document.getElementById("name").value;
 		if(name != ''){
 		var text = "Thank you for Visiting my Profile "+name;
@@ -17,26 +17,25 @@
 </script>
 </head>
 <body >
-	<div id="container">
-		<div id="links">
+	<div>
 			<button onclick="location.href='index.html'">Home</button>
 			<button onclick="location.href='profile.html'">Profile</button>
-			<button  class="current"onclick="location.href='contact.html'">Contact</button>
+			<button  class="current" onclick="location.href='contact.html'">Contact</button>
 			<button><a href = "resume.pdf" download>Download Resume</a></button>
-		</div>
-		<div>
-		<h2 id="title">You can follow me on</h2>
-		<br/>
+	</div>
+	<div>
+		<h2>You can follow me on</h2>
 		<a target="_blank" href="https://twitter.com/Twitter"><img class="contact_icon"  src="images/medium-icon.png" /></a>
 		<a target="_blank" href="http://www.facebook.com/YOURUSERNAMEHERE"><img class="contact_icon"  src="images/facebook-icon.png" /></a>
 		<a target="_blank" href="https://medium.com/@nschsravanthi"><img class="contact_icon"  src="images/twitter-icon.png" /></a>
-		</div>
-		<br/>
-		<span>Enter your name</span>
-		<input id="name" type="text" name="name"></div>
-		<br/>
-		<br/>
-		<button class="message" onclick="enterName()">Send Me Message</button>
 	</div>
+	<br/>
+	<div>
+		<span>Enter your name</span>
+		<input id="name" type="text" name="name">
+	</div>
+	<br/>
+	<br/>
+	<button class="message" onclick="validateName()">Send Me Message</button>
 </body>
 </html>
