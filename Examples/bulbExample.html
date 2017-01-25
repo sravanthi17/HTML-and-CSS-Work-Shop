@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function callButtonclick(image_link){
+		var imageTag = document.getElementById("myImage");
+		imageTag.src = image_link;
+	}
+</script>
+</head>
+<body >
+	<button onclick="callButtonclick('../images/off.png')">on</button>
+	<img id="myImage" src="../images/off.png"/> 
+	<button onclick="callButtonclick('../images/on.png')">off</button>
+</body>
+</html>
